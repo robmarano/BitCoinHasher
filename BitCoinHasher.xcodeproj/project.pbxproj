@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D442C2EE189210C30027028B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D442C2ED189210C30027028B /* main.c */; };
 		D442C2F0189210C30027028B /* BitCoinHasher.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = D442C2EF189210C30027028B /* BitCoinHasher.1 */; };
+		D468864C189219F6008C2B26 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D468864B189219F6008C2B26 /* libcrypto.dylib */; };
+		D468864D189219FD008C2B26 /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D468864918921977008C2B26 /* libssl.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,8 @@
 		D442C2EA189210C30027028B /* BitCoinHasher */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BitCoinHasher; sourceTree = BUILT_PRODUCTS_DIR; };
 		D442C2ED189210C30027028B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		D442C2EF189210C30027028B /* BitCoinHasher.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = BitCoinHasher.1; sourceTree = "<group>"; };
+		D468864918921977008C2B26 /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.dylib; path = usr/lib/libssl.dylib; sourceTree = SDKROOT; };
+		D468864B189219F6008C2B26 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D468864D189219FD008C2B26 /* libssl.dylib in Frameworks */,
+				D468864C189219F6008C2B26 /* libcrypto.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,8 @@
 		D442C2E1189210C20027028B = {
 			isa = PBXGroup;
 			children = (
+				D468864B189219F6008C2B26 /* libcrypto.dylib */,
+				D468864918921977008C2B26 /* libssl.dylib */,
 				D442C2EC189210C30027028B /* BitCoinHasher */,
 				D442C2EB189210C30027028B /* Products */,
 			);
@@ -225,6 +233,7 @@
 				D442C2F5189210C30027028B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
